@@ -40,9 +40,9 @@ OBJDIR_RELEASE = obj\\Release
 DEP_RELEASE = 
 OUT_RELEASE = bin\\Release\\Snake++.exe
 
-OBJ_DEBUG = $(OBJDIR_DEBUG)\\src\\obstacle.o $(OBJDIR_DEBUG)\\src\\funcs.o $(OBJDIR_DEBUG)\\src\\Snake.o $(OBJDIR_DEBUG)\\src\\Game.o $(OBJDIR_DEBUG)\\src\\Fruit.o $(OBJDIR_DEBUG)\\src\\Board.o $(OBJDIR_DEBUG)\\main.o
+OBJ_DEBUG = $(OBJDIR_DEBUG)\\src\\obstacle.o $(OBJDIR_DEBUG)\\src\\Snake.o $(OBJDIR_DEBUG)\\src\\Game.o $(OBJDIR_DEBUG)\\src\\Fruit.o $(OBJDIR_DEBUG)\\src\\Board.o $(OBJDIR_DEBUG)\\main.o
 
-OBJ_RELEASE = $(OBJDIR_RELEASE)\\src\\obstacle.o $(OBJDIR_RELEASE)\\src\\funcs.o $(OBJDIR_RELEASE)\\src\\Snake.o $(OBJDIR_RELEASE)\\src\\Game.o $(OBJDIR_RELEASE)\\src\\Fruit.o $(OBJDIR_RELEASE)\\src\\Board.o $(OBJDIR_RELEASE)\\main.o
+OBJ_RELEASE = $(OBJDIR_RELEASE)\\src\\obstacle.o $(OBJDIR_RELEASE)\\src\\Snake.o $(OBJDIR_RELEASE)\\src\\Game.o $(OBJDIR_RELEASE)\\src\\Fruit.o $(OBJDIR_RELEASE)\\src\\Board.o $(OBJDIR_RELEASE)\\main.o
 
 all: debug release
 
@@ -62,9 +62,6 @@ out_debug: before_debug $(OBJ_DEBUG) $(DEP_DEBUG)
 
 $(OBJDIR_DEBUG)\\src\\obstacle.o: src\\obstacle.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c src\\obstacle.cpp -o $(OBJDIR_DEBUG)\\src\\obstacle.o
-
-$(OBJDIR_DEBUG)\\src\\funcs.o: src\\funcs.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c src\\funcs.cpp -o $(OBJDIR_DEBUG)\\src\\funcs.o
 
 $(OBJDIR_DEBUG)\\src\\Snake.o: src\\Snake.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c src\\Snake.cpp -o $(OBJDIR_DEBUG)\\src\\Snake.o
@@ -101,9 +98,6 @@ out_release: before_release $(OBJ_RELEASE) $(DEP_RELEASE)
 
 $(OBJDIR_RELEASE)\\src\\obstacle.o: src\\obstacle.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c src\\obstacle.cpp -o $(OBJDIR_RELEASE)\\src\\obstacle.o
-
-$(OBJDIR_RELEASE)\\src\\funcs.o: src\\funcs.cpp
-	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c src\\funcs.cpp -o $(OBJDIR_RELEASE)\\src\\funcs.o
 
 $(OBJDIR_RELEASE)\\src\\Snake.o: src\\Snake.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c src\\Snake.cpp -o $(OBJDIR_RELEASE)\\src\\Snake.o
