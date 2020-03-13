@@ -97,7 +97,7 @@ void Snake::update(int dt, bool _think){
 
     switch (mBoard.at(mPos)) {
         case Board::Fruit:
-            //if (!mGame.mGameOver) Beep(1000, 20);
+            if (!mGame.mGameOver) Beep(1000, 20);
             mSize++;
 
             grow = true;
@@ -108,7 +108,7 @@ void Snake::update(int dt, bool _think){
             break;
         case Board::Obstacle:
         case Board::Snake:
-            //Beep(700, 40);
+            Beep(700, 40);
 
             mSpeed = 0;
             mAlive = false;
