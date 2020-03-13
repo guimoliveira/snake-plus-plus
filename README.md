@@ -1,5 +1,5 @@
 # Snake++
-Jogo da cobrinha em C++ para Windows\n
+Jogo da cobrinha em C++ para Windows  
 Utilizando a arcaica WinGDI
 # Imagens
 
