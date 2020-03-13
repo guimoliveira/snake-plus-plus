@@ -4,4 +4,4 @@ Utilizando a arcaica WinGDI
 # Imagens
 
 # Download
-[Snake++.exe](bin/Release/Snake++.exe)
+<a href="bin/Release/Snake++.exe" download>Click to Download</a>
