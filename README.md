@@ -1,6 +1,6 @@
 # Snake++
 Jogo da cobrinha em C++ para Windows  
-Utilizando a arcaica WinGDI (sem dependências)
+Utilizando a arcaica WinGDI (sem dependências externas)
 # Imagens
 ![img1](imgs/1.png)  
 ![img2](imgs/2.png)
